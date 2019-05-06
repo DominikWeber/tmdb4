@@ -21,6 +21,9 @@ use Tmdb\HttpClient\Adapter\AdapterInterface;
 use Tmdb\HttpClient\Adapter\GuzzleAdapter;
 use Tmdb\HttpClient\HttpClient;
 use Tmdb\ApiToken as Token;
+use Tmdb\ApiMethodsTrait;
+use Tmdb\ConfigurationInterface;
+
 
 /**
  * Client wrapper for TMDB
