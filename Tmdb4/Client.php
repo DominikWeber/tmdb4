@@ -20,7 +20,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Tmdb\HttpClient\Adapter\AdapterInterface;
 use Tmdb\HttpClient\Adapter\GuzzleAdapter;
 use Tmdb\HttpClient\HttpClient;
-use Tmdb\ApiToken as Token;
+use Tmdb\ApiToken;
 use Tmdb\ApiMethodsTrait;
 use Tmdb\ConfigurationInterface;
 
@@ -71,6 +71,7 @@ class Client
             $options = $options->all();
         }
 
+        $options['host'] = str_replace('/3/', '/4/', $options['host']);
         $this->configureOptions(array_replace(['token' => $token], (array) $options));
         $this->constructHttpClient();
     }
@@ -98,7 +99,7 @@ class Client
     /**
      * Get the API token
      *
-     * @return Token
+     * @return ApiToken
      */
     public function getToken()
     {
