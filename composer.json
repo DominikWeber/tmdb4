@@ -1,0 +1,32 @@
+{
+    "name": "DominikWeber/tmdb4",
+    "type": "library",
+    "description": "Library for v4 of the API of The Movie Database.",
+    "homepage": "https://github.com/DominikWeber/tmdb4",
+    "keywords": ["tmdb", "api", "php", "wrapper", "movie", "tv", "tv show", "tvdb", "v4"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Weber",
+            "homepage": "https://github.com/DominikWeber",
+            "email": "dominikweber81@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "symfony/config": ">=2.7,<5",
+        "symfony/dependency-injection": ">=2.7,<5",
+        "symfony/event-dispatcher": ">=2.7,<5",
+        "symfony/http-kernel": ">=2.7,<5",
+        "doctrine/doctrine-cache-bundle": "^1.0",
+        "php-tmdb/api": "^2.1",
+        "twig/twig": "^1.11|^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8||^5.0,<5.4",
+        "symfony/framework-bundle": ">=2.7,<5"
+    },
+    "autoload": {
+        "psr-4": { "Tmdb\\SymfonyBundle\\": "" }
+    }
+}
