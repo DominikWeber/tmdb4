@@ -27,6 +27,6 @@
         "symfony/framework-bundle": ">=2.7,<5"
     },
     "autoload": {
-        "psr-4": { "Tmdb\\": "" }
+        "psr-4": { "Tmdb4\\": "" }
     }
 }
